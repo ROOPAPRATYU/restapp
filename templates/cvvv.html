@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+body
+{
+	margin-top:100px;
+	text-align:center;	
+}
+input
+{color:blue;}
+</style>
+</head>
+<body>
+    <form method='post' action='/cvvv'>
+	<u><h1><p>ENTER THE USER DETAILS</p></h1></u>
+	<b>HOTEL NAME:<input type='text' name='hname1' placeholder='enter a name'></br></br>
+	USER NAME:<input type='text' name='adname'  placeholder='enter user name '></br></br>
+	DATE:<input type='date' name='date' placeholder='enter date'/></br></br>
+	TABLE NUMBER:
+	
+	<select name='tablen'>
+	{% for i in ltablenum1 %}
+            <option value="{{i}}">{{i}}</option>
+           
+              
+        {% endfor %}
+	</select>
+	</br></br></b>
+	<input type='submit' value='CLICK HERE TO PAY'/>
+
+    </from><br/><br/>
+
+    
+</body>
+</html>

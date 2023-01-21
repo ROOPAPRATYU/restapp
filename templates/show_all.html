@@ -1,0 +1,38 @@
+<html>
+   <body>
+	<h3 align='center'>
+         <b >DETAILS OF CUSTOMER</b>
+      </h3>
+      <table align='center' border=1>
+         <thead>
+            <tr >
+               <th>NAME</th>
+               <th>MOBILE NUMBER</th>
+               <th>MAIL ID</th>
+	       <th>HOTELNAME</th>
+               <th>DATE</th>
+	       <th>TABLE NUMBER</th>
+            </tr>
+         </thead>
+
+         <tbody align='center'>
+            {% for user in userdetails %}
+               <tr>
+                  <td>{{ user.username }}</td>
+                  <td>{{ user.mobilenum }}</td>
+                  <td>{{ user.email }}</td>
+		  <td>{{ user.hotelname }}</td>
+                  <td>{{ user.dat }}</td>
+		  <td>{{ user.number }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+<br/><br/>
+<div align='center'>
+        <form action="/">
+        <button class="float-left submit-button" >Home</button>
+        </form>
+        </div>
+   </body>
+</html>

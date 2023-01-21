@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: times New roman;
+     display:block
+  margin:0px;
+}
+
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+ 
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 300px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<div class="split">
+  <div class="centered">
+  <img src='/static/c.jpg'>
+    <form method='post'>
+	<u><h1><p>SIGN UP</p></h1></u>
+	<b>USER NAME:<input type='text' name='username' placeholder='enter user name' required/></br></br>
+	MOBILE NUMBER:<input type="tel" id="phone" name="mbln" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+	EMAIL ID:<input type='email' name='email' placeholder='enter email id' /></br></br>
+	PASSWORD:<input type="password" id="pwd" name="passwd"
+  	pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  	placeholder="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required></b><br><br>
+	<input type='submit' value='SUBMIT'/>
+    </from></br>
+    
+  </div>
+
+</div>
+</body>
+</html>

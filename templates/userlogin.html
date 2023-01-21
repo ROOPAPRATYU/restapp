@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: times New roman;
+ }
+
+.split {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+  
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 300px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<div class="split" >
+	<div class="centered">
+	<img src='/static/c.jpg'/>
+ 	<form method='post'>
+	<u><h1><P>SIGN IN</P></h1></u>
+	<b>USER NAME:<input type='text' name='username' placeholder='enter user name'/></br></br>
+	PASSWORD:<input type="password" id="pwd" name="passwuser"
+  	pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  	placeholder="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required></b><br><br></b>
+	<input type='submit' value='SUBMIT'/></br></br>
+	<b>New User? <a href="/signup"> <b>click here </b></a>To Create New Account</b>
+	</form></br>
+	
+	<div align='center'>
+        <form action="/">
+        <button class="float-left submit-button" >Home</button>
+        </form>
+        </div>
+ </div>
+ 
+</div>
+
+
+
+     
+</body>
+</html> 
